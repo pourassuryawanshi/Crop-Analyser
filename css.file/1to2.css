@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+  
+}
+p{
+    font-family:Arial, Helvetica, sans-serif;}
+a{
+    margin-right: 200px;
+}
+#lmt{
+    border: 2px solid black;
+    margin-left:  100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    background-color: rgb(255, 228, 196);
+}
+body{
+    background-image: url("D:/2crop.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main-button:checked + .menu {
+    display: block;
+  }

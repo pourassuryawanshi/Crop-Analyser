@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="C:\Users\pouras\OneDrive\Desktop\New folder\css.file\css.mainpage.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text-container {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>pH based crops</h1>
+    <hr>
+    <div id="optionleft">
+        <p>
+            <form>
+                <select id="websiteSelect">
+                    <option value="default">Select a website</option>
+                    <option value="pH%20from%201%20to%202.html">pH from 1 to 2</option>
+                    <option value="pH%20from%202%20to%203.html">pH from 2 to 3</option>
+                    <option value="pH%20from%203%20to%204.html">pH from 3 to 4</option>
+                    <option value="pH%20from%204%20to%205.html">pH from 4 to 5</option>
+                    <option value="pH%20from%205%20to%206.html">pH from 5 to 6</option>
+                    <option value="pH%20from%206%20to%207.html">pH from 6 to 7 </option>
+                    <option value="pH%20from%207%20to%208.html">pH from 7 to 8</option>
+                    <option value="pH%20from%208%20to%209.html">pH from 8 to 9</option>
+                    <option value="pH%20from%209%20to%2010.html">pH from 9 to 10</option>
+                    <option value="pH%20from%2010%20to%2011.html">pH from 10 to 11</option>
+                    <option value="pH%20from%2011%20to%2012.html">pH from 11 to 12</option>
+                    <option value="pH%20from%2012%20to%2013.html">pH from 12 to 13</option>
+                    <option value="pH%20from%2013%20to%2014.html">pH from 13 to 14</option>
+                </select>
+                <button onclick="redirectToSelectedWebsite()">Enter</button>
+            </form>
+    </div>
+
+    <script>
+        function redirectToSelectedWebsite() {
+            var selectElement = document.getElementById("websiteSelect");
+            var selectedWebsite = selectElement.value;
+            if (selectedWebsite && selectedWebsite !== "default") {
+                window.location.href = selectedWebsite;
+            } else {
+                alert("Please select a website first.");
+            }
+        }
+    </script>
+</body>
+</html>
